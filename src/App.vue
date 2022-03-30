@@ -1,18 +1,10 @@
 <template>
-  <MainApp/>
+  <div class="flex container  justify-center items-center h-screen"> 
+    <MainApp />
+  </div>
 </template>
 
 <script setup>
-  import MainApp from './views/mainApp.vue'
-  
+import MainApp from './views/mainApp.vue'
+
 </script>
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
