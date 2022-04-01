@@ -8,7 +8,10 @@ const path =require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [Icons({autoInstall: true}),vue(),Components({
+  plugins: [
+    Icons({autoInstall: true}),
+    vue(),
+    Components({
     resolvers: [
       IconsResolver({
         prefix:"icon"

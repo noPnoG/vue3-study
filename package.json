@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^8.2.3",
     "axios": "^0.26.1",
     "eslint-plugin-vue": "^8.5.0",
     "vue": "^3.2.25"
