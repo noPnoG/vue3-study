@@ -4,24 +4,27 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 
-const path =require('path')
+const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Icons({autoInstall: true}),
+    Icons({ autoInstall: true }),
     vue(),
     Components({
-    resolvers: [
-      IconsResolver({
-        prefix:"icon"
-      }),
-    ]
-  })],
+      resolvers: [
+        IconsResolver({
+          prefix: 'icon',
+        }),
+      ],
+    })],
   loader: { '.js': 'jsx' },
-  resolve:{
-    alias:{
-      '@':path.resolve(__dirname,"src")
-    }
+  server: {
+    hmr: true,
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
 })
